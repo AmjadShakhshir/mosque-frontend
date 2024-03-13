@@ -6,7 +6,7 @@ const Main = () => {
         <p className="lead text-muted">الرابطة الإسلامية في فنلندا</p>
       </section>
       <section className="py-5">
-        <img className="main-img" src="public/assets/Mobile.png" alt="mobile" />
+        <img className="main-img" src="/assets/Mobile.png" alt="mobile" />
       </section>
     </main>
   );
