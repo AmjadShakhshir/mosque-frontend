@@ -5,7 +5,7 @@ const PrayerBanner = () => {
         <span>13th March 2024</span>
         <h3>Full Timetable</h3>
       </div>
-      <table className="prayer-table">
+      <table className="table prayer-table">
         <thead>
           <tr>
             <th>Fajer</th>
