@@ -1,5 +1,10 @@
 :root {
   --primary-color: #247ba0;
+  --secondary-color: #70c1b3;
+  --tertiary-color: #b2dbbf;
+  --border-primary-color: #e3f1fa;
+  --border-secondary-color: #ffedab;
+  --white-color: #fff;
 }
 
 body {
@@ -12,10 +17,55 @@ body {
 a {
   text-decoration: none;
 }
+.header-btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
 .main-img {
   width: 600px;
   height: 400px;
   object-fit: contain;
+}
+.prayer-banner {
+  background-color: var(--primary-color);
+  text-align: center;
+  border-radius: 28px;
+  font-weight: 300;
+}
+.prayer-header {
+  color: #e6c870;
+  padding: 10px 20px;
+  font-size: 1.5em;
+}
+.prayer-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  display: table;
+  background-color: var(--primary-color);
+  color: #e6c870;
+}
+.prayer-table th,
+.prayer-table td {
+  border: 1px solid #ddd;
+  padding: 18px;
+  text-align: center;
+  border-radius: 0;
+}
+.prayer-table td.active {
+  background-color: #e6c870;
+  color: var(--primary-color);
+}
+.article-row {
+  border: 10px solid var(--border-primary-color);
+  border-radius: 28px;
 }
 .footer-icon svg {
   color: var(--primary-color);
