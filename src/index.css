@@ -2,6 +2,7 @@
   --primary-color: #247ba0;
   --secondary-color: #70c1b3;
   --tertiary-color: #b2dbbf;
+  --quaternary-color: #f5d2d1;
   --border-primary-color: #e3f1fa;
   --border-secondary-color: #ffedab;
   --white-color: #fff;
@@ -70,11 +71,18 @@ a {
   border-radius: 28px;
 }
 /* Start School */
-.school {
+.school-container {
   margin-top: 25px;
+  background-color: var(--quaternary-color);
+  border-radius: 28px;
+  padding: 20px;
+  min-height: 65vh;
 }
 /* End School */
 /* Start About */
+.about-container {
+  min-height: 65vh;
+}
 .about-content {
   background-color: var(--border-secondary-color);
   border-radius: 28px;
@@ -170,12 +178,10 @@ a {
 .footer-icon svg {
   color: var(--primary-color);
 }
-.footer {
+/* footer {
   position: fixed;
+  height: 230px;
   bottom: 0;
   width: 100%;
-  color: white;
-  max-width: 1400px;
-  margin: 0 auto;
-}
+} */
 /* End Footer */

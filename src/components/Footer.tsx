@@ -3,16 +3,16 @@ import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg
 
 const Footer = () => {
   return (
-    <footer className="footer mt-5">
-      <div className="d-flex py-4 my-4 border-bottom">
+    <footer className="footer navbar-fixed-bottom">
+      <div className="container d-flex py-4 my-4 border-bottom">
         <ul className="list-unstyled d-flex">
           <li className="ms-3">
-            <a className="link-dark" href="#">
+            <a className="link-dark" href="/">
               Home
             </a>
           </li>
           <li className="ms-3">
-            <a className="link-dark" href="#">
+            <a className="link-dark" href="/about">
               About
             </a>
           </li>
@@ -43,7 +43,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="d-flex flex-column justify-content-start text-muted">
+      <div className="container d-flex flex-column justify-content-start text-muted">
         <p>&copy; 2024 Alrabita, Inc. All rights reserved.</p>
         <span className="footer-span">Developed By Amjad Shakhshir</span>
       </div>
