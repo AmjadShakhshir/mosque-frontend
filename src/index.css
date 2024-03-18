@@ -16,6 +16,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #fafdfe;
+  min-height: 100vh;
 }
 a {
   text-decoration: none;
@@ -71,12 +72,14 @@ a {
   border-radius: 28px;
 }
 /* Start School */
+.school {
+  min-height: 65vh;
+}
 .school-container {
   margin-top: 25px;
   background-color: var(--quaternary-color);
   border-radius: 28px;
   padding: 20px;
-  min-height: 65vh;
 }
 /* End School */
 /* Start About */
@@ -174,6 +177,17 @@ a {
   display: block !important;
 }
 /* End Blogs */
+/* Start Contact */
+.contact {
+  min-height: 65vh;
+}
+.contact-container {
+  background-color: var(--gray-card);
+  border-radius: 28px;
+  padding: 20px;
+}
+
+/* End Contact */
 /* Start Footer */
 .footer-icon svg {
   color: var(--primary-color);

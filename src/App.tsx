@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import School from "./pages/School";
 import Blogs from "./pages/Blogs";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -31,7 +32,7 @@ const App = () => {
         },
         {
           path: "contact",
-          element: <h1>Contact</h1>,
+          element: <Contact />,
         },
       ],
     },
