@@ -1,34 +1,37 @@
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header>
       <Navbar expand="lg">
         <Container fluid>
-          <Navbar.Brand href="/">
-            <img src="/assets/logo_03.png" width="60" height="60" className="d-inline-block align-top" alt="Mosque logo" />
+          <Navbar.Brand>
+            <Link to="/">
+              <img src="/assets/logo_03.png" width="60" height="60" className="d-inline-block align-top" alt="Mosque logo" />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
-              <Nav.Link className="nav-link" href="/">
+              <Link className="nav-link" to="/">
                 Home
-              </Nav.Link>
-              <Nav.Link className="nav-link" href="/about">
+              </Link>
+              <Link className="nav-link" to="/about">
                 About
-              </Nav.Link>
-              <Nav.Link className="nav-link" href="#action2">
+              </Link>
+              <Link className="nav-link" to="/prayer-times">
                 Prayer Times
-              </Nav.Link>
-              <Nav.Link className="nav-link" href="/school">
+              </Link>
+              <Link className="nav-link" to="/school">
                 School
-              </Nav.Link>
-              <Nav.Link className="nav-link" href="/blogs">
+              </Link>
+              <Link className="nav-link" to="/blogs">
                 Blogs
-              </Nav.Link>
-              <Nav.Link className="nav-link" href="/contact">
+              </Link>
+              <Link className="nav-link" to="/contact">
                 Contact
-              </Nav.Link>
+              </Link>
             </Nav>
             <Button className="header-btn">Donate</Button>
           </Navbar.Collapse>
