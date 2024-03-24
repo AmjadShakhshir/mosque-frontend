@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 const PrayerBanner = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="prayer-banner">
       <div className="prayer-header d-flex justify-content-between">
@@ -8,12 +12,12 @@ const PrayerBanner = () => {
       <table className="table prayer-table">
         <thead>
           <tr>
-            <th>Fajer</th>
-            <th>Sunrise</th>
-            <th>Dhuhr</th>
-            <th>Asr</th>
-            <th>Maghrib</th>
-            <th>Isha</th>
+            <th>{t("Fajr")}</th>
+            <th>{t("Sunrise")}</th>
+            <th>{t("Dhuhr")}</th>
+            <th>{t("Asr")}</th>
+            <th>{t("Maghrib")}</th>
+            <th>{t("Isha")}</th>
           </tr>
         </thead>
         <tbody>
